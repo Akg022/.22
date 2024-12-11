@@ -1,0 +1,92 @@
+/* Estilo para o corpo da página */
+body {
+    background-color: #6a0dad; /* Cor de fundo roxa */
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contêiner centralizado para conteúdo */
+.container {
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+}
+
+/* Estilo para a galeria de fotos */
+.photo-grid {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+/* Estilo individual para cada foto */
+.photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid white;
+}
+
+/* Imagens dentro das fotos, ajustando ao tamanho do contêiner */
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Estilo para o título */
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para subtítulos ou pequenas descrições */
+.subtitle {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Estilo para o texto principal */
+.text {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+/* Estilo para textos menores */
+.small-text {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Estilo para a fonte Playwrite CU Guides */
+.playwrite-cu-guides-regular {
+    font-family: "Playwrite CU Guides", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Estilo para os corações */
+.heart {
+    position: absolute;
+    top: -10px;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    opacity: 0.8;
+    animation: fall linear forwards;
+}
+
+/* Animação de queda dos corações */
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
